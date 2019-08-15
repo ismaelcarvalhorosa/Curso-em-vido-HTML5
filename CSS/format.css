@@ -1,0 +1,133 @@
+/* 
+
+======= Todas as formatações de texto e de foto simples ======
+
+*/
+
+
+@charset"UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap);
+body#idex{
+    background-color: #0000008c;
+}
+#texto{
+    font-style: oblique;
+}
+section.section1{
+    background-position:10px 10px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 8%;
+    width: 70%;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+}
+section#secton2{
+    /* background: rgba(0, 0, 0, 0.596); */
+    text-align:left;
+    display: block;
+    width: 800px;
+    float: left;
+    border-right: 2px solid rgba(7, 7, 7, 0.39);
+}
+aside#aside1{
+    display: block;
+    width: 600px;
+    float: right;
+}
+.image{
+    width: 40px;
+    height: 40px;
+}
+#area1{
+    width: 1000px;
+    text-align: end;
+}
+figure.foto-legenda{
+    position: relative;
+    color: white;
+    width: 450px;
+    /* border: 8px solid blue */
+}
+figure.foto-legenda img{
+    width: 100%;
+}
+figure.foto-legenda figcaption{
+    font-family: 'Fredericka the Great', cursive;
+    position: absolute;
+    top: 0px;
+    background-color: rgba( 0,0,0, 0.4);
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+div#pai{
+    margin: 300px auto; 
+}
+img#buzz{
+    position: absolute;
+    top: 50px;
+    left: 80%;
+}
+.escrita{
+    font-size: 25px;
+    font-family: 'Fredericka the Great', cursive;
+}
+img#benvindo{
+    position: absolute;
+    top: 90px;
+    left: 25%;
+}
+footer#rodape{
+    text-align: center;
+    color: #1f1029 ;
+    background-color: rgb(31, 16, 41); 
+    width: 100%;
+    clear: both; /* linpar as configuraçoes dos dois lados*/
+    position: relative;
+    bottom: 0;
+}
+
+div#google{
+    width: 500px;
+    height: 300px;
+    border-radius:5%; 
+    background-image:url(https://d2u6gqtb2vk2pn.cloudfront.net/How_to_set_up_Google_My_Business_for_local_SEO.png);
+    margin: 20px;
+    }
+i.material-icons{
+    color: rgb(69, 255, 62);
+}
+h3#google{
+    color: rgb(69, 255, 62);
+}
+table#tabelaicon{
+    background: black;
+    border:1px solid slategrey;
+    border-spacing:0px;
+    margin:25%; 
+}
+table#tabelaicon td{
+    color: rgb(97, 255, 92);
+    border: 1px solid silver ;
+    padding: 30px;
+}
+table#tabelaicon td.ce{
+    background-color:black ;
+    text-align: left;
+}
+table#tabelaicon td.cd{
+    background-color: rgb(39, 9, 70);
+    text-align: left;
+}
+table#tabelaicon caption{
+    background-color: rgb(90, 90, 90);
+    color: white;
+}
+article#noticia h2{
+    font-size: 12pt;
+}
+header#cabecario-noticia{
+    font-family: 'Franklin Gothic Medium';
+}

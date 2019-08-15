@@ -1,0 +1,25 @@
+video#filme{
+    width: 525px;
+    height: 400px;
+    position: absolute;
+    top: 320px;
+    left: 30%;
+    border-radius:20%;
+}
+audio#musica{
+    position: absolute;
+    top: 500px;
+}
+img#tv{
+    width: 900px;
+    position: absolute;;
+    top:250px;
+    left: 22%;
+}
+iframe#videoYoutube{
+    position: absolute;
+    top:1000px;
+    margin: 100px;
+    background: black;
+    border-radius: 5%;
+}

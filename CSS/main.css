@@ -1,0 +1,264 @@
+/* 
+
+======= Todas as animaçoes são feitas aqui ======
+
+*/
+
+img.cabeçario{
+    background-color: rgb(96, 96, 251);
+    animation-name: anima;
+    animation-duration: 80s;
+    position: absolute;
+    top: -1px;
+}
+/* @keyframes anima{
+    0% {background-color: red;}
+    10% {background-color: rgb(245, 245, 245);}
+    20% {background-color: yellow;}
+    30% {background-color: chartreuse}
+    40%{background: rgb(251, 163, 0)}
+    50% {background-color: rgb(40, 0, 173);}
+    60% {background-color: rgb(97, 15, 117)}
+    20% {background-color: rgb(245, 140, 140);}
+    80% {background-color: rgb(53, 121, 95);}
+    90% {background-color: rgb(80, 80, 79);}
+    100%{background: black}
+} */
+@keyframes anima{
+    0%  {background-color: red; --cor: red;}
+    5%  {background-color: rgb(190, 98, 98); }
+    10% {background-color: rgb(245, 245, 245);--cor:rgb(245, 245, 245);}
+    15% {background-color: rgb(199, 195, 146);}
+    20% {background-color: yellow;}
+    30% {background-color: chartreuse;}
+    40% {background-color: rgb(251, 163, 0);}
+    50% {background-color: rgb(40, 0, 173);}
+    60% {background-color: rgb(97, 15, 117);}
+    65% {background-color: rgb(97, 15, 117);}
+    70% {background-color: rgb(245, 140, 140);}
+    80% {background-color: rgb(53, 121, 95);}
+    85% {background-color: rgb(90, 104, 98);}
+    90% {background-color: rgb(80, 80, 79);}
+    93% {background-color: rgb(56, 56, 54);}
+    95% {background-color: rgb(0, 0, 0);}
+    100%{background-color: rgb(47, 3, 33);}
+}
+@keyframes bordas{
+    0% {box-shadow:1px 1px 10px red;}
+    10% {box-shadow:1px 1px 10px rgb(245, 245, 245);}
+    20% {box-shadow:1px 1px 10px yellow;}
+    30% {box-shadow:1px 1px 10px chartreuse}
+    50% {box-shadow:1px 1px 10px rgb(40, 0, 173);}
+    55%{background: rgba(0, 0, 0, 0.089)}
+    60% {box-shadow:1px 1px 10px rgb(97, 15, 117)}
+    80% {box-shadow:1px 1px 10px rgb(53, 121, 95);}
+    90% {box-shadow:1px 1px 10px rgb(80, 80, 79);}
+    90%{background: rgba(51, 250, 78, 0.459)}
+    100%{background: rgba(0, 0, 0, 0.014)}
+}
+.imagem{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%; 
+    transition: border-radius 2s, width 2s, height 2s;
+}
+.imagem:hover{
+    width: 1000px;
+    height: 600px;
+    border-radius: 5%; 
+}
+#area{
+    --altura:40px;
+    --largura:40px;
+    --redondo:50%;
+    --cor:rgba(172, 255, 47, 0.609);
+    width: 1000px;
+    background: rgba(255, 255, 255, 0.472);
+    text-align: end;
+    pointer-events: menu;
+    transition: all 2s;
+}
+#area:hover{
+    --altura:5px;
+    --largura:500px;
+    --redondo:1%;
+    --cor:black;
+    --redondo:0%;
+    width: 1000px;
+    background: rgba(255, 255, 255, 0.472);
+    text-align: end;
+    pointer-events: menu;
+}
+.menu{
+    width: var(--altura);
+    height: var(--largura);
+    border-radius: var(--redondo); 
+    background: var(--cor);
+    transition: border-radius 2s, width 2s, height 2s;
+}
+.menu:hover{
+    width: 5px;
+    height: 500px;
+    background: black;
+    border-radius: 5%; 
+}
+.menu1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    background: rgba(172, 255, 47, 0.609);
+    opacity: 1;
+    transition: border-radius 2s, width 2s, height 2s, opacity 2s;
+}
+.menu1:hover{
+    width: 1000px;
+    height: 800px;
+    background: rgba(246, 246, 246, 0.294);
+    border-radius: 5%; 
+    opacity: 0.3;
+}
+.imgMenu{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    background: rgba(172, 255, 47, 0.609);
+    opacity: 1;
+    transition: border-radius 2s, width 2s, height 2s, opacity 2s;
+}
+.imgMenu:hover{
+    width: 1000px;
+    height: 800px;
+    background: rgba(246, 246, 246, 0.294);
+    border-radius: 5%; 
+    opacity: 0.3;
+}
+figure.foto-legenda{
+    box-shadow: 2px 2px 10px black;
+    transition: box-shadow 2s;
+}
+figure.foto-legenda:hover{
+    box-shadow: 0px 0px 20px greenyellow;
+}
+figure.foto-legenda figcaption{
+   opacity: 0;
+   transition: opacity 2s;
+}
+figure.foto-legenda figcaption:hover{
+   opacity: 1;
+}
+img.foto{
+    width: 500px;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5%;
+    transition: all 2s; 
+}
+img.foto:hover{
+    width: 600px;
+    box-shadow: 1px 1px 10px rgb(124, 251, 65);
+    border-radius: 0%;
+}
+a {
+    color: black;
+    background-color: rgba(14, 7, 7, 0); 
+    transition: color 2s;
+}
+a:hover{
+    background-color: rgba(2, 2, 2, 0.383);
+    color: white; 
+}
+                             /*   Animação, botoes  do munu  */
+img#home{                   
+    background: #ffffff00;
+    left: 5%;
+    top: -100px;
+    opacity: 0;
+    transition: all 1s;
+    position: absolute;
+}
+img#home:hover{
+    box-shadow:1px 1px 10px black;
+    animation-name: bordas;
+    animation-duration: 10s;
+    top: 0px;
+    opacity: 1;
+}
+img#Especificacoes{   
+    /* box-shadow: 1px 1px 10px rgb(80, 135, 255); */
+    position: absolute;
+    top: -100px;
+    left: 23%;
+    opacity: 0;
+    transition: all 1s;
+}
+img#Especificacoes:hover{
+    box-shadow:1px 1px 10px black;
+    animation-name: bordas;
+    animation-duration: 10s;
+    top: 0px;
+    opacity: 1;
+}
+img#midia{
+    position: absolute;
+    top: -100px;
+    left: 42%;
+    opacity: 0;
+    transition: all 1s;
+}
+img#midia:hover{
+    box-shadow:1px 1px 10px black;
+    animation-name: bordas;
+    animation-duration: 10s;
+    top: 0px;
+    opacity: 1;
+}
+img#fotos{
+    position: absolute;
+    top: -100px;
+    left: 63%;
+    opacity: 0;
+    transition: all 1s;
+}
+img#fotos:hover{
+    box-shadow:1px 1px 10px black;
+    animation-name: bordas;
+    animation-duration: 10s;
+    top: 0px;
+    opacity: 1;
+}
+img#fale{
+    position: absolute;
+    top: -87px;
+    left: 79%;
+    opacity: 0;
+    transition: all 1s;
+}
+img#fale:hover{
+    box-shadow:1px 1px 10px black;
+    animation-name: bordas;
+    animation-duration: 10s;
+    top: 0px;
+    opacity: 1;
+}
+img#fotocanto{
+    position: absolute;
+    top:100px;
+    width: 300px;
+    right: 2%;
+    border-radius: 100%;
+    border-width:-300px;
+    opacity: 0;
+    transition: all 2s;
+}
+img#fotocanto:hover{
+    opacity: 1;
+    border-radius: 1%;
+}
+img#olhos{
+    position: absolute;
+    top:100px;
+    width: 300px;
+    right: 2%;
+    border-radius: 100%;
+    border-width:-300px;
+    transition: all 2s;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula HTML 5</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/format.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/spec.css">
+    <img class="cabeçario" src="img/cabeçario3.png" alt="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:10pt;
+        }
+        pre{
+            text-align:justify;
+            text-indent: 20px;
+            color:black;
+        }
+        article h3{
+            font-size: 15pt;
+            color:white;
+            background: rgba(0, 0, 0, 0.226);
+            padding:5px;
+            margin: 0px;
+        }
+        article{
+            margin-bottom:800px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="spec">
+        <a href="index.html"><img id="home" src="img/home.png" alt=""></a> 
+        <a href="specs.html"><img id="Especificacoes" src="img/especificaçoes.png" alt=""></a> 
+        <a href="multimidia.html"><img id="midia" src="img/midia.png" alt=""></a> 
+        <a href="fotos.html"><img id="fotos" src="img/fotos.png" alt=""></a> 
+        <a href="fale.html"><img id="fale" src="img/fale.png" alt=""></a> 
+    </div>
+    <article>
+        <section id="corpo-spec">
+            <img src="img/relogio2.png" alt="" usemap="#meumapa">
+            <map name="meumapa">
+                <area shape="rect" coords="232,34,254,75" href="documento.html#art1" target="janela" />
+                <area shape="circle" coords="389,202,21" href="documento.html#art2" alt="" target="janela">
+                <area shape="circle" coords="240,348,22" href="documento.html#art3" alt="" target="janela">
+                <area shape="poly" coords="75,191,116,191,117,214,74,215" href="documento.html#art4" alt="" target="janela">
+            </map>    
+            
+            <pre>
+                    <header> <h3> Tudo tem o seu tempo determinado,</h3></header> e há tempo para todo o propósito 
+                    debaixo do céu.
+                    Há tempo de nascer, e tempo de morrer; tempo de plantar, e tempo de arrancar o que se plantou;
+                    <header> <h3>Tempo de matar, </h3> </header> e tempo de curar; tempo de derrubar, e tempo de edificar;
+                    Tempo de chorar, e tempo de rir; tempo de prantear, e tempo de dançar;
+                    Tempo de espalhar pedras, e tempo de ajuntar pedras; tempo de abraçar, e tempo de afastar-se de abraçar;
+                    Tempo de buscar, e tempo de perder; tempo de guardar, e tempo de lançar fora;
+                    Tempo de rasgar, e tempo de coser; tempo de estar calado, e tempo de falar;
+                    Tempo de amar, e tempo de odiar; tempo de guerra, e tempo de paz.
+            </pre>
+        </section>
+        <section id="conteudo">
+            <iframe id="ifremeLateral" src="documento.html" name="janela" frameborder="0"></iframe>
+        </section>
+    </article>
+</body>
+<script src="js/anima.js"></script>
+<footer id="rodapeSpec">
+    <img src="" alt="">
+</footer>
+</body>
+</html>

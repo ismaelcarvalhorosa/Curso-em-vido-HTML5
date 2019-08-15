@@ -1,0 +1,22 @@
+@charsert "UTF-8";
+
+section#corpo-spec{
+    margin-top: 300px; 
+}
+section#conteudo{
+    width: 600px;
+    margin: auto;
+    position: absolute;
+    top: 200px;
+    left: 45%;
+}
+iframe#ifremeLateral{
+    width: 700px;
+    height: 500px;
+    border: none;
+    overflow: hidden;
+}
+iframe#ifremeLateral::-webkit-scrollbar{
+    display: none;
+    background: black;
+}

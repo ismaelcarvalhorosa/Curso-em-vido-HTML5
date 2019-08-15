@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula HTML 5</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/format.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/fale.css">
+    <img class="cabeçario" src="img/cabeçario3.png" alt="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+        function cal_total(){
+            var qtd = parseInt(document.getElementById('cQtd').value)
+            tot = qtd * 1500;document.getElementById('cTot').value = tot;
+        }
+    </script>
+</head>
+<body>
+    <div id="spec">
+        <a href="index.html"><img id="home" src="img/home.png" alt=""></a> 
+        <a href="specs.html"><img id="Especificacoes" src="img/especificaçoes.png" alt=""></a> 
+        <a href="multimidia.html"><img id="midia" src="img/midia.png" alt=""></a> 
+        <a href="fotos.html"><img id="fotos" src="img/fotos.png" alt=""></a> 
+        <a href="fale.html"><img id="fale" src="img/fale.png" alt=""></a> 
+    </div>
+
+    <form method="POST" action="dt65estudio@yahoo.com.br" oninput="cal_total();">
+        <fieldset id="usuario"><legend>Nome</legend>
+           <p>Qual seu nome? <input type="text" neme="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome conpleto*"/></p>
+           <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos"/> </p>
+           <p>E-mail: <input type="email" name="tEmeil" id="cEmeil" size="20" maxlength="40"/></p>
+           <fieldset id="sexo">
+              <legend> Sexo: </legend>
+                <input type="radio" neme="tSexo" id="cMasc" value="radiobutton"  /><label for="cMasc"> Masculino</label>
+                <input type="radio" neme="tSexo" id="cFemi" value="radiobutton"/> <label for="cFemi"> Feminino</label>
+                <p>Dada de nacimento <input type="date" name="tNac" id="cNac"></p>
+           </fieldset>
+        </fieldset>
+        <fieldset id="endereco"> <legend>Endereço</legend>
+           <p><label for="cRua"> Onde tu mora meu chegado? <input type="text" name="tRua" id="cRua" size="40" maxlength="80" placeholder="Lugar onde mora como a rua por exenplo"></label></p>
+           <p>Número: <input type="number" neme="tNumber" id="cNumber" min="3" max="9999"/></p>
+           <p><label for="cEst">Estado: </label> <select name="tEst" id="cEst">
+           <optgroup label="Baixa energia"> 
+                <option value="soi">Solido</option>
+                <option value="liq">Liquido</option>
+            </optgroup>
+            <optgroup label="Muita energia">
+                <option value="gas">Gasozo</option> 
+                <option value="pla">Plasma ⚡ </option>
+            </optgroup>
+            </select></p>
+            <p><label for="cCidade">Cidade </label> <input type="text" name="tCidade" id="cCidade" maxlength="40" size="20" placeholder="Cidade onde vc mora " list="cidades"></p>
+            <datalist id="cidades"> 
+                <option value="Pato Branco"></option>
+                <option value="São Paulo"></option>
+                <option value="Riu de Janeiro"></option>
+            </datalist>
+            <p><label for="cUrg">Grau de Urgemcia: </label>   Min<input type="range" min="0" max="10" step="2" name="tUrg" id="cUrg">Max</p>
+        </fieldset>
+        <fieldset id="mensagem"><legend><label for="tMsg"> Mensagem </label></legend>
+            <textarea name="tMsg" id="cMsg" cols="50" rows="10" placeholder="Deixe aqui sua mansagem :)"></textarea>
+            <p><input type="checkbox" name="tPedi" id="cPedi">
+            <label for="cPedi"> Fazer uma analise de dados </label> </p>
+             Cor:<input type="color" value="#000fff">
+            <p>Quantidade:<input type="nuber" name="tQtd" id="cQtd" min="1" max="4" value="0"></p>
+            <p>Total em $:<input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
+            <p><input type="submit" value="emviar"/></p>
+
+        </fieldset>
+    </form>
+</body>
+
+<script src="js/anima.js"></script>
+<footer id="rodapeSpec">
+    <img src="" alt="">
+</footer>
+</body>
+</html>

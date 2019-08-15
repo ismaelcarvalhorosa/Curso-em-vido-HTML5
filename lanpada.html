@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img id="luz" src="img/lampada-apagada.jpg" alt="" onclick="lampada(1)" onmousemove="lampada(2)" onmouseout="lampada(3)">
+    <script>
+        var valida = 0
+        function lampada(tipo){
+            if (tipo == 1){
+                document.getElementById("luz").src="img/MRjsF.jpg";
+                valida = 1;
+            }        
+            else if(tipo == 2 && valida == 0){
+                document.getElementById("luz").src="img/ybxlO.jpg";
+            }
+            else if(tipo == 3 && valida == 0){
+                document.getElementById("luz").src="img/lampada-apagada.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
